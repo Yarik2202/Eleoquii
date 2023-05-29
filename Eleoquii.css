@@ -187,3 +187,82 @@ header nav a:last-child{
     margin-left: 50px;
 }
 
+.div_toolsbar {
+    background-color: #F5F6F8;
+}
+
+.toolsbar_components {
+    max-width: 1180px;
+    min-width: 800px;
+    margin: auto;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toolsbar_link nav a{
+    text-decoration: none;
+    color: #2D3C4B;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.shadov_a {
+    box-shadow: inset 0px 0px 10px rgba(207, 203, 203, 0.6);
+}
+
+.toolsbar_link nav a:hover{
+    text-decoration: none;
+    color: #2D3C4B;
+    font-size: 14px;
+    font-weight: 700;
+    color:#90a82d;
+    padding: 10px;
+}
+
+form.catalin{
+  width: 204px;
+  overflow: hidden;
+}
+  form.catalin input{
+    float: left;
+    border: none;
+    font: 14px Arial, Helvetica, sans-serif;
+    height: 22px;
+    width: 170px;
+    margin: 0;
+    -webkit-appearance: none;
+    outline: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    
+  }
+  form.catalin button{
+    float: left;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: white;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  form.catalin img {
+    width: 14px;
+    height:14px;
+  }
+
+  
+
+ 
+   
+  
