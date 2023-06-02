@@ -1,0 +1,13 @@
+@media screen and (max-width: 1071px) {
+    .button_nav {
+        display: flex;
+    }
+
+    .toolsbar_link_nav_row {
+        display: none;
+    }
+
+    .toolsbar_link_nav_column {
+        display: none;
+    }
+}
