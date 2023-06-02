@@ -19,6 +19,5 @@ function changePicture(event) {
 
    const elem = event.target;
    const smallElemSrc = elem.src;
-   console.log(smallElemSrc)
    bigPicture.src = smallElemSrc;
 }
