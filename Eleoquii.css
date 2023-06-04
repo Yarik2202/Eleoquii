@@ -438,6 +438,11 @@ main {
     height: 15px;
 }
 
+.star_box img:hover {
+    width: 17px;
+    height: 17px;
+}
+
 .top_right_box a {
     color: #1a4596;
     font-size: 18px;
@@ -449,9 +454,171 @@ main {
     margin-top: 8px;
 }
 
+/*****     content about_products ****/
+.about_products form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.about_products form h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/**** color ****/
+.about_products_color {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.color_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.color_box input {
+    display: none;
+}
+
+.radio_color-label {
+    width: 20px;
+    height: 20px;
+    box-sizing:border-box;
+    cursor: pointer;
+}
+
+.radio_color1 {
+    background-color: black;
+}
+
+.radio_color2 {
+    background-color: grey;
+}
+
+.radio_color3 {
+    background-color: blue;
+}
+
+.radio_color4 {
+    background-color: green;
+}
+
+.radio_color5 {
+    background-color: red;
+}
+
+.radio_color6 {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.color_box input:checked + .radio_color-label {
+    border: 3px solid rgb(228, 228, 18);
+  }
+
+.butoon_quontity {
+    text-decoration: none;
+    width: 40px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/**** size ****/
+
+.about_products_size {
+    width: 50%;
+}
+
+.products_size_position {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.size_position_link {
+    width: 149px;
+}
+
+.size_position_link a {
+    color:#1a4596;
+    font-size: 12px;
+}
+
+.size_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.size_box input {
+    display: none;
+}
+
+.checkbox_size-label {
+    width: 20px;
+    height: 20px;
+    box-sizing:border-box;
+    background-color: #D7DCDF;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.checkbox_size14::before {
+    content: '14';  
+}
+
+.checkbox_size16::before {
+    content: '16';
+}
+
+.checkbox_size18::before {
+    content: '18';
+}
+
+.checkbox_size20::before {
+    content: '20';
+}
+
+.checkbox_size22::before {
+    content: '22';
+}
+
+.checkbox_size24::before {
+    content: '24';
+}
+
+.size_box input:checked + .checkbox_size-label {
+    border: 2px solid black;
+}
+
+.add_bag {
+    margin-top: 30px;
+}
+
+.add_bag button {
+    text-decoration: none;
+    width: 120px;
+    height: 25px;
+    background-color:#D2E48B;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+
+.add_bag button:hover {
+    background-color: #90a82d;
+}
 
 /*****      main aside   *****/
 aside {
     width: 30%;
+    margin-left: 20px;
 }
 
