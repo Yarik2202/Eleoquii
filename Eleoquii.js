@@ -8,8 +8,9 @@ const bigPicture = document.querySelector('.big_picture');
 const smallPictures = document.querySelector('.content_picture_small');
 smallPictures.addEventListener('click',changePicture);
 
-const starBox = document.querySelector('.star_box');
-starBox.addEventListener('click', starChoise);
+
+const mainContainer = document.querySelector('.main_content_container');
+mainContainer.addEventListener('click', starChoice);
 
 const checkBox20 = document.getElementById('checkbox_20').disabled=true;
 
@@ -27,9 +28,8 @@ const formTextarea = document.getElementById('form_textarea');
 const buttonWriteReview = document.getElementById('write_review');
 buttonWriteReview.addEventListener('click', hiddenTextarea);
 
-const starBoxBottom = document.getElementById('.star_box_bottom');
-starBoxBottom.addEventListener('click', starChoise);
-
+const reviewBox = document.querySelector('.review_box');
+reviewBox.addEventListener('click', showReview);
 
 
 function hiddenToolsbar(event) {
@@ -44,21 +44,22 @@ function changePicture(event) {
    bigPicture.src = smallElemSrc;
 }
 
-function starChoise(event) {
-   
-   let arrStar = starBox.querySelectorAll('img');
-   
-   let starChoice = event.target;
-   let starNum = starChoice.dataset.star;
-   
+function starChoice(event) {
+   let elem = event.target;
+   let starBox = elem.parentNode;
 
-      for (let i = 0; i < arrStar.length; i++) {
-         if (i < starNum) {
-            arrStar[i].src = "./png/Paomedia-Small-N-Flat-Star.512.png";
-         } else {
-            arrStar[i].src = "./png/star.png";
-         }
-      }     
+   if (starBox.className !== 'star_box') return;
+      
+   let arrStar = starBox.querySelectorAll('img');
+   let starNum = elem.dataset.star;
+
+   for (let i = 0; i < arrStar.length; i++) {
+      if (i < starNum) {
+         arrStar[i].src = "./png/Paomedia-Small-N-Flat-Star.512.png";
+      } else {
+         arrStar[i].src = "./png/star.png";
+      }
+   }       
 }
 
 function showInfo(event) {
@@ -78,4 +79,15 @@ function showInfo(event) {
 
 function hiddenTextarea() {
    formTextarea.className = formTextarea.className === 'box_textarea_form hidden' ? 'box_textarea_form' : 'box_textarea_form hidden'; 
+}
+
+function  showReview(event) {
+   let elem = event.target;
+   console.log(elem.previousElementSibling.className);
+
+   if (elem.tagName !== "BUTTON") return;
+   
+   let parentBox = elem.previousElementSibling;
+   parentBox.className = parentBox.className === 'review_text' ? "" : 'review_text';    
+
 }

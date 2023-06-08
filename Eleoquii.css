@@ -773,10 +773,147 @@ main {
     background-color: #90a82d;
 }
 
+.review_box {
+    margin-top: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review h4, p {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.review_text {
+    height: 20px; 
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.review button {
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    color:#1a4596;
+    font-size: 16px;
+    border-bottom: #1a4596 1px solid;
+    padding-bottom: 0px;
+}
+
+.review button:hover {
+    text-decoration: none;
+    color: red;
+    font-size: 16px;
+    border-bottom: 1px solid red;
+}
+
 
 /*****      main aside   *****/
 aside {
     width: 30%;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.aside_arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.aside_arrow button {
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    
+}
+
+.aside_arrow img {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border: none;
+}
+
+.aside_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.aside_content a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+footer {
+    background-color: #DADEE1;
+}
+
+.footer_content {
+    max-width: 1280px;
+    min-width: 800px;
+    margin: auto;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #DADEE1; 
+}
+
+.footer_link {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.footer_link a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #515152;
+}
+
+.footer_link a:hover {
+    border-bottom: 1px solid #515152;
+}
+
+.footer_link span {
+    ont-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #858589;
+}
+
+.footer_icon {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #515152;
+}
+
+.footer_icon img {
+    padding-left: 10px;
+    width: 30px;
+    height: 30px;
+}
