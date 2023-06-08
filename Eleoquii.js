@@ -13,14 +13,31 @@ starBox.addEventListener('click', starChoise);
 
 const checkBox20 = document.getElementById('checkbox_20').disabled=true;
 
+const bookmark = document.querySelector(".container_bookmark_menu");
+bookmark.addEventListener('click', showInfo);
+
+const arrInputBookmarkMenu = bookmark.querySelectorAll('input');
+
+
+const fashionText = document.querySelector('.fashion_text');
+const fabricText = document.querySelector('.fabric_text');
+const fitText = document.querySelector('.fit_text');
+
+const formTextarea = document.getElementById('form_textarea');
+const buttonWriteReview = document.getElementById('write_review');
+buttonWriteReview.addEventListener('click', hiddenTextarea);
+
+const starBoxBottom = document.getElementById('.star_box_bottom');
+starBoxBottom.addEventListener('click', starChoise);
+
+
 
 function hiddenToolsbar(event) {
-   event.preventDefault();
+   console.log(toolsBarColumn.className);
    toolsBarColumn.style.display = toolsBarColumn.style.display === 'flex' ? 'none' : 'flex';  
 }
 
 function changePicture(event) {
-   event.preventDefault();
 
    const elem = event.target;
    const smallElemSrc = elem.src;
@@ -28,7 +45,6 @@ function changePicture(event) {
 }
 
 function starChoise(event) {
-   event.preventDefault();
    
    let arrStar = starBox.querySelectorAll('img');
    
@@ -43,4 +59,23 @@ function starChoise(event) {
             arrStar[i].src = "./png/star.png";
          }
       }     
+}
+
+function showInfo(event) {
+   let label= event.target;
+   let arr = [fashionText, fabricText, fitText];
+   
+   if (label.tagName !== 'LABEL') return;
+  
+   for (let i = 0; i < arr.length; i++) {
+      if (label.id === arr[i].className) {
+         arr[i].style.display = 'flex';   
+      } else {
+         arr[i].style.display = 'none';
+      }
+   }
+}
+
+function hiddenTextarea() {
+   formTextarea.className = formTextarea.className === 'box_textarea_form hidden' ? 'box_textarea_form' : 'box_textarea_form hidden'; 
 }
