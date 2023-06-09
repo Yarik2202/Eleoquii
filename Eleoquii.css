@@ -570,30 +570,6 @@ main {
     font-size: 12px;
 }
 
-.checkbox_size14::before {
-    content: '14';  
-}
-
-.checkbox_size16::before {
-    content: '16';
-}
-
-.checkbox_size18::before {
-    content: '18';
-}
-
-.checkbox_size20::before {
-    content: '20';
-}
-
-.checkbox_size22::before {
-    content: '22';
-}
-
-.checkbox_size24::before {
-    content: '24';
-}
-
 .size_box input:checked + .checkbox_size-label {
     border: 2px solid black;
 }
@@ -812,7 +788,7 @@ main {
 }
 
 
-/*****      main aside   *****/
+/*****    aside   *****/
 aside {
     width: 30%;
     margin-left: 20px;

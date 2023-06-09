@@ -12,8 +12,6 @@ smallPictures.addEventListener('click',changePicture);
 const mainContainer = document.querySelector('.main_content_container');
 mainContainer.addEventListener('click', starChoice);
 
-const checkBox20 = document.getElementById('checkbox_20').disabled=true;
-
 const bookmark = document.querySelector(".container_bookmark_menu");
 bookmark.addEventListener('click', showInfo);
 
@@ -23,6 +21,8 @@ const arrInputBookmarkMenu = bookmark.querySelectorAll('input');
 const fashionText = document.querySelector('.fashion_text');
 const fabricText = document.querySelector('.fabric_text');
 const fitText = document.querySelector('.fit_text');
+
+console.log(fashionText)
 
 const formTextarea = document.getElementById('form_textarea');
 const buttonWriteReview = document.getElementById('write_review');
@@ -70,7 +70,7 @@ function showInfo(event) {
   
    for (let i = 0; i < arr.length; i++) {
       if (label.id === arr[i].className) {
-         arr[i].style.display = 'flex';   
+         arr[i].style.display = label.id === arr[i].className ? 'flex' : 'none';
       } else {
          arr[i].style.display = 'none';
       }
@@ -83,7 +83,6 @@ function hiddenTextarea() {
 
 function  showReview(event) {
    let elem = event.target;
-   console.log(elem.previousElementSibling.className);
 
    if (elem.tagName !== "BUTTON") return;
    
