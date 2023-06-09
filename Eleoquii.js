@@ -33,7 +33,6 @@ reviewBox.addEventListener('click', showReview);
 
 
 function hiddenToolsbar(event) {
-   console.log(toolsBarColumn.className);
    toolsBarColumn.style.display = toolsBarColumn.style.display === 'flex' ? 'none' : 'flex';  
 }
 
@@ -87,6 +86,6 @@ function  showReview(event) {
    if (elem.tagName !== "BUTTON") return;
    
    let parentBox = elem.previousElementSibling;
-   parentBox.className = parentBox.className === 'review_text' ? "" : 'review_text';    
+   parentBox.className = parentBox.className === 'review_text_hidden' ? "" : 'review_text_hidden';    
 
 }
