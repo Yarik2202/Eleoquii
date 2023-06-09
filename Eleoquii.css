@@ -374,7 +374,12 @@ main {
     width: 40px;
     height: 50px;
     margin: 0px 15px 15px 0px;
+}
 
+.content_picture_small img:hover {
+    cursor: pointer;
+    border: #1a4596 1px solid;
+    box-sizing: border-box;
 }
 
 .content_picture_bottom  {
@@ -399,7 +404,7 @@ main {
     justify-content: space-between;
 }
 
-.poduct_name {
+.product_name {
     color:#102A5A;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
@@ -438,6 +443,11 @@ main {
     height: 15px;
 }
 
+.star_box img:hover {
+    width: 17px;
+    height: 17px;
+}
+
 .top_right_box a {
     color: #1a4596;
     font-size: 18px;
@@ -449,9 +459,447 @@ main {
     margin-top: 8px;
 }
 
-
-/*****      main aside   *****/
-aside {
-    width: 30%;
+/*****     content about_products ****/
+.about_products form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
+.about_products form h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/**** color ****/
+.about_products_color {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.color_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.color_box input {
+    display: none;
+}
+
+.radio_color-label {
+    width: 20px;
+    height: 20px;
+    box-sizing:border-box;
+    cursor: pointer;
+}
+
+.radio_color1 {
+    background-color: black;
+}
+
+.radio_color2 {
+    background-color: grey;
+}
+
+.radio_color3 {
+    background-color: blue;
+}
+
+.radio_color4 {
+    background-color: green;
+}
+
+.radio_color5 {
+    background-color: red;
+}
+
+.radio_color6 {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.color_box input:checked + .radio_color-label {
+    border: 3px solid rgb(228, 228, 18);
+  }
+
+.butoon_quontity {
+    text-decoration: none;
+    width: 40px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/**** size ****/
+
+.about_products_size {
+    width: 50%;
+}
+
+.products_size_position {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.size_position_link {
+    width: 149px;
+}
+
+.size_position_link a {
+    color:#1a4596;
+    font-size: 12px;
+}
+
+.size_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.size_box input {
+    display: none;
+}
+
+.checkbox_size-label {
+    width: 20px;
+    height: 20px;
+    box-sizing:border-box;
+    background-color: #D7DCDF;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.label_disabled {
+    background-color: #e2e0e0;
+    color: #a3a3a3;
+}
+
+.size_box input:checked + .checkbox_size-label {
+    border: 2px solid black;
+}
+
+.add_bag {
+    margin-top: 30px;
+}
+
+.add_bag button {
+    text-decoration: none;
+    width: 120px;
+    height: 25px;
+    background-color:#D2E48B;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+
+.add_bag button:hover {
+    background-color: #90a82d;
+}
+
+.free_shipping {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 40px;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px dotted black;
+}
+
+/*** bookmark_menu ***/
+.container_bookmark_menu {
+    margin-top: 40px;
+}
+
+.container_bookmark_menu input {
+    display: none;
+}
+
+.container_bookmark_menu form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.bookmark_menu {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    background-color: #D7DCDF;
+    box-sizing: border-box;
+}
+
+.container_bookmark_menu input:checked + .bookmark_menu {
+    background-color: white;
+    border-bottom: 1px solid white;
+  }
+
+.fashion_text {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}  
+
+.fabric_text {
+    display: none;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.fit_text {
+    display: none;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.tabs {
+    border: 1px solid grey;
+    border-top: 1px solid white;
+}
+
+.square {
+    width: 20px;
+    height:20px;
+    margin: 10px;
+    background-color: #aca9a9;
+}
+
+.main_box_link {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main_box_link_icon {
+    width: 15px;
+    height: 15px;
+}
+
+.main_box_link a {
+    width: 120px;
+    text-decoration: none;
+    color:#1a4596;
+    font-size: 14px;
+}
+
+.main_box_link a:hover {
+    text-decoration: none;
+    color: red;
+    font-size: 14px;
+    border-bottom: 1px solid red;
+}
+
+.box_textarea_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0 10px 0;
+    border-bottom: 2px dotted black;
+}
+
+.box_textarea_title span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.box_textarea_title button {
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    color:#1a4596;
+    font-size: 16px;
+    border-bottom: #1a4596 1px solid;
+    padding-bottom: 0px;
+}
+
+.box_textarea_form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.box_textarea textarea {
+    height: 100px;
+}
+
+.button_send {
+    margin-top: 15px;
+    text-decoration: none;
+    width: 120px;
+    height: 25px;
+    background-color:#D2E48B;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+
+.button_send:hover {
+    background-color: #90a82d;
+}
+
+.review_box {
+    margin-top: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review h4, p {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.review_text_hidden {
+    height: 20px; 
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.review button {
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    color:#1a4596;
+    font-size: 16px;
+    border-bottom: #1a4596 1px solid;
+    padding-bottom: 0px;
+}
+
+.review button:hover {
+    text-decoration: none;
+    color: red;
+    font-size: 16px;
+    border-bottom: 1px solid red;
+}
+
+
+/*****    aside   *****/
+aside {
+    width: 30%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside_arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.aside_arrow button {
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    
+}
+
+.aside_arrow img {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border: none;
+}
+
+.aside_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.aside_content a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+footer {
+    background-color: #DADEE1;
+}
+
+.footer_content {
+    max-width: 1280px;
+    min-width: 800px;
+    margin: auto;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #DADEE1; 
+}
+
+.footer_link {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.footer_link a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #515152;
+}
+
+.footer_link a:hover {
+    border-bottom: 1px solid #515152;
+}
+
+.footer_link span {
+    ont-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #858589;
+}
+
+.footer_icon {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: #515152;
+}
+
+.footer_icon img {
+    padding-left: 10px;
+    width: 30px;
+    height: 30px;
+}

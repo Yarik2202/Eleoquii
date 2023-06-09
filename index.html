@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eloquii</title>
-    <link rel="stylesheet" href="eleoquii.css">
+    <link rel="stylesheet" href="./eleoquii.css">
     <link rel="stylesheet" href="./media_rules.css">
 </head>
 <body>
@@ -126,7 +126,7 @@
             <section class="content_products">
                 <div class="products_top">   
                     <div class="product_top_left">
-                        <div class="poduct_name">
+                        <div class="product_name">
                             Product <br> Name
                         </div>
                         <div class="product_top_left_price">
@@ -137,25 +137,222 @@
                     <div class="product_top_right">
                         <div class="top_right_box">
                             <div class="star_box">
-                                <img src="./png/star.png" alt="star1">
-                                <img src="./png/star.png" alt="star2">
-                                <img src="./png/star.png" alt="star3">
-                                <img src="./png/star.png" alt="star4">
-                                <img src="./png/star.png" alt="star5">
+                                <img src="./png/star.png" alt="star1" data-star="1">
+                                <img src="./png/star.png" alt="star2" data-star="2">
+                                <img src="./png/star.png" alt="star3" data-star="3">
+                                <img src="./png/star.png" alt="star4" data-star="4">
+                                <img src="./png/star.png" alt="star5" data-star="5">
                             </div>
                             <div>
-                                <a href="#qii">Read Reviews</a>
+                                <a href="#review_box">Read Reviews</a>
                             </div>
                         </div>
                         <div class="product_top_right_item">
                             Item #123532
                         </div>
                     </div>
-                </div>    
+                </div>
+                <div class="about_products">
+                    <form action="">
+                        <div class="about_products_color">
+                           <h5>COLOR</h5>
+                            <div class="color_box">
+                                <input type="radio" name="radio_color" id="radio_color1">
+                                <label for="radio_color1" class="radio_color-label radio_color1"></label>
+
+                                <input type="radio" name="radio_color" id="radio_color2">
+                                <label for="radio_color2" class="radio_color-label radio_color2"></label>
+
+                                <input type="radio" name="radio_color" id="radio_color3">
+                                <label for="radio_color3" class="radio_color-label radio_color3"></label>
+
+                                <input type="radio" name="radio_color" id="radio_color4">
+                                <label for="radio_color4" class="radio_color-label radio_color4"></label>
+
+                                <input type="radio" name="radio_color" id="radio_color5">
+                                <label for="radio_color5" class="radio_color-label radio_color5"></label>
+
+                                <input type="radio" name="radio_color" id="radio_color6">
+                                <label for="radio_color6" class="radio_color-label radio_color6"></label>
+                            </div>
+                            <h5>QUONTITY</h5>
+                            <button class="butoon_quontity">1</button> 
+                        </div>
+                        <div class="about_products_size">
+                            <h5>SIZE</h5>
+                            <div class="products_size_position">
+                                 <div class="size_box">
+                                    <input type="checkbox" name="checkbox_size" id="checkbox_14">
+                                    <label for="checkbox_14" class="checkbox_size-label">14</label>
+
+                                    <input type="checkbox" name="checkbox_size" id="checkbox_16">
+                                    <label for="checkbox_16" class="checkbox_size-label">16</label>
+
+                                    <input type="checkbox" name="checkbox_size" id="checkbox_18">
+                                    <label for="checkbox_18" class="checkbox_size-label">18</label>
+
+                                    <input type="checkbox" name="checkbox_size" id="checkbox_20" disabled>
+                                    <label for="checkbox_20" class="checkbox_size-label label_disabled">20</label>
+
+                                    <input type="checkbox" name="checkbox_size" id="checkbox_22">
+                                    <label for="checkbox_22" class="checkbox_size-label">22</label>
+
+                                    <input type="checkbox" name="checkbox_size" id="checkbox_24">
+                                    <label for="checkbox_24" class="checkbox_size-label">24</label>
+                                </div>
+                                <div class="size_position_link">
+                                    <a href="https://www.google.com/">What size am I?</a>
+                                    </a>
+                                </div> 
+                            </div>
+                           <div class="add_bag">
+                                <button>ADD TO BAG ></button>
+                           </div>
+                        </div>    
+                    </form>
+                </div>
+                <div class="free_shipping">
+                    FREE SHIPPING & RETURNS
+                </div>
+                <div class="container_bookmark_menu">
+                     <form action="">
+                        <input type="radio" name="fashion" id="fashion" checked>
+                        <label for="fashion" class="bookmark_menu" id="fashion_text" >FASHION</label>
+
+                        <input type="radio" name="fashion" id="fabric">
+                        <label for="fabric" class="bookmark_menu" id="fabric_text">FABRIC</label>
+
+                        <input type="radio" name="fashion" id="fit">
+                        <label for="fit" class="bookmark_menu" id="fit_text">FIT</label>
+                    </form>
+                </div>
+                <div class="tabs">
+                    <div class="fashion_text">
+                        <p><span class="square">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;Shape 1</span></p> 
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>&nbsp;&nbsp; Aut voluptates, sequi ipsam harum nemo excepturi suscipit enim quibusdam placeat saepe<br> &nbsp;&nbsp;dolorem reprehenderit perspiciatis necessitatibus ab in quaerat ex natus corrupti?
+                    </div>
+                    <div class="fabric_text">
+                        <p><span class="square">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;Shape 2</span></p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem minima maiores ducimus ut accusamus amet vero cupiditate architecto repudiandae quisquam placeat ratione, voluptas optio officia, asperiores sed dolores itaque animi?
+                    </div>
+                    <div class="fit_text">
+                        <p><span class="square">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp;&nbsp;&nbsp;Shape 3</span></p> 
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui accusamus quae laboriosam itaque fugit tempora, fugiat obcaecati, odio, consequatur unde ab quas nam minus dolorem cupiditate adipisci illo vitae?</span> 
+                    </div>  
+                </div>
+                <div class="main_box_link">
+                    <a href="https://www.google.com/">
+                        <img src="./png/heart-icon.svg" alt="icon heart" class="main_box_link_icon">&nbsp;&nbsp;&nbsp;Add to wishlist
+                    </a>
+                    <a href="https://www.google.com/">
+                        <img src="./png/mail-letter-svgrepo-com.svg" alt="icon letter" class="main_box_link_icon">&nbsp;&nbsp;&nbsp;Sand to a friend
+                    </a>
+                    <a href="https://www.google.com/">
+                        <img src="./png/print-svgrepo-com.svg" alt="icon print" class="main_box_link_icon">&nbsp;&nbsp;&nbsp;Print
+                    </a>
+                    
+                    <a href="https://www.google.com/">
+                        <img src="./png/icon-like.svg" alt="icon like" class="main_box_link_icon">&nbsp;&nbsp;&nbsp;Like
+                    </a>
+                    <a href="https://www.google.com/">
+                        <img src="./png/plus-mini-1523-svgrepo-com.svg" alt="icon plus" class="main_box_link_icon">&nbsp;&nbsp;&nbsp;Share this
+                    </a>
+                </div>
+                <div class="box_textarea">
+                    <div class="box_textarea_title">
+                        <span>Customer Reviews</span>
+                        <button id="write_review">Write a review</button>
+                    </div>
+                    <form action="" id="form_textarea" class="box_textarea_form hidden">
+                       <textarea name="" class=""></textarea>
+                       <button class="button_send" id="button_send">Send</button> 
+                    </form>
+                </div>
+                <div class="review_box" id="review_box">
+                    <div class="review">
+                        <h4> Subject Line Of The Review</h4>
+                        <p>Posted by Hollski | 29 April, 2011</p>
+                        <div class="star_box">
+                            <img src="./png/star.png" alt="star1" data-star="1">
+                            <img src="./png/star.png" alt="star2" data-star="2">
+                            <img src="./png/star.png" alt="star3" data-star="3">
+                            <img src="./png/star.png" alt="star4" data-star="4">
+                            <img src="./png/star.png" alt="star5" data-star="5">
+                        </div>
+                        <div class="review_text_hidden">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione mollitia incidunt quam enim molestias, omnis molestiae culpa perspiciatis nobis id cumque voluptatum a eos accusamus sequi quos illum rerum iusto?
+                        </div>
+                        <button>Read More ></button>
+                    </div>
+                    <div class="review">
+                        <h4> Subject Line Of The Review</h4>
+                        <p>Posted by Hollski | 29 April, 2011</p>
+                        <div class="star_box">
+                            <img src="./png/star.png" alt="star1" data-star="1">
+                            <img src="./png/star.png" alt="star2" data-star="2">
+                            <img src="./png/star.png" alt="star3" data-star="3">
+                            <img src="./png/star.png" alt="star4" data-star="4">
+                            <img src="./png/star.png" alt="star5" data-star="5">
+                        </div>
+                        <div class="review_text_hidden">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione mollitia incidunt quam enim molestias, omnis molestiae culpa perspiciatis nobis id cumque voluptatum a eos accusamus sequi quos illum rerum iusto?
+                        </div>
+                        <button>Read More ></button>
+                    </div>             
+                </div> 
             </section>
-            <aside>kghkhkhjkvhkjvkjvjkhjkhvkjhvjkvhkhvjk</aside>
+            <aside>
+                <div class="aside_arrow">
+                    <button>
+                        <img src="./png/up-arrow-svgrepo-com.svg" alt="arrow up">
+                    </button>  
+                    WE ALSO RECOMMEND
+                </div>
+                <div class="aside_content">
+                    <a href=""><img src="./imag/recommend_item1.png" alt="icon">
+                        Product Title goes here <span>$20.90</span>
+                    </a>
+                    <a href=""><img src="./imag/recommend_item3.png" alt="icon">
+                        Product Title goes here <span>$20.90</span>
+                    </a>
+                    <a href=""><img src="./imag/recommend_item4.png" alt="icon">
+                        Product Title goes here <span>$20.90</span>
+                    </a>
+                </div>
+                <div class="aside_arrow">
+                    <button>
+                        <img src="./png/down-arrow-svgrepo-com.svg" alt="arrow down">
+                    </button>
+                </div>
+                      
+            </aside>
         </div>
     </main>
+    <footer>
+        <div class="footer_content">
+            <div class="footer_link">
+                <a href="https://www.google.com/">Order Tracking</a>
+                <a href="https://www.google.com/">Privacy</a>
+                <a href="https://www.google.com/">CA Privacy Policy</a>
+                <a href="https://www.google.com/">Gift Cards</a>
+                <a href="https://www.google.com/">Visual Dollars</a>
+                <a href="https://www.google.com/"> T&Cs</a>
+                <a href="https://www.google.com/">Affiliate Program</a>
+                <a href="https://www.google.com/">Our Company</a>
+                <a href="https://www.google.com/">Press</a>
+                <a href="https://www.google.com/">Size Cart</a>
+                <a href="https://www.google.com/">Shpae My Style</a>
+                <a href="https://www.google.com/">Site Map</a>
+                <a href="https://www.google.com/">Customer Services</a>
+                <span>1 855 ELO QUII (1 855 356 7844)</span> 
+            </div>
+            <div class="footer_icon">
+                <span>Fallow Us:</span>
+                <img src="./imag/fb.png" alt="icon Facebook">
+                <img src="./imag/twitter.png" alt="icon twitter">
+            </div>
+        </div>     
+    </footer>
 </body>
 <script src="./eleoquii.js"></script>
 </html>
