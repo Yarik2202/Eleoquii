@@ -755,6 +755,10 @@ main {
     font-size: 14px;
 }
 
+.no_text {
+    background-color: red; 
+}
+
 .button_send:hover {
     background-color: #90a82d;
 }
