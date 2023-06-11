@@ -46,7 +46,7 @@
                                 SHOPPING BAG
                             </div>
                         </div>
-                        <button type="button" class="shoping_bag_button">WIEW BAG \/</button>
+                        <button type="button" class="shoping_bag_button" id="view_bag_button">WIEW BAG \/</button>
                     </div>
                 </div>
             </div>
@@ -153,51 +153,51 @@
                     </div>
                 </div>
                 <div class="about_products">
-                    <form action="" id="form_color_size" type>
+                    <form id="form_color_size">
                         <div class="about_products_color">
                            <h5>COLOR</h5>
                             <div class="color_box">
-                                <input type="radio" name="radio_color" id="radio_color1">
+                                <input type="radio" name="radio_color" id="radio_color1" value="black">
                                 <label for="radio_color1" class="radio_color-label radio_color1"></label>
 
-                                <input type="radio" name="radio_color" id="radio_color2">
+                                <input type="radio" name="radio_color" id="radio_color2" value="grey">
                                 <label for="radio_color2" class="radio_color-label radio_color2"></label>
 
-                                <input type="radio" name="radio_color" id="radio_color3">
-                                <label for="radio_color3" class="radio_color-label radio_color3"></label>
+                                <input type="radio" name="radio_color" id="radio_color3" value="blue">
+                                <label for="radio_color3" class="radio_color-label radio_color3" ></label>
 
-                                <input type="radio" name="radio_color" id="radio_color4">
-                                <label for="radio_color4" class="radio_color-label radio_color4"></label>
+                                <input type="radio" name="radio_color" id="radio_color4" value="green">
+                                <label for="radio_color4" class="radio_color-label radio_color4" ></label>
 
-                                <input type="radio" name="radio_color" id="radio_color5">
-                                <label for="radio_color5" class="radio_color-label radio_color5"></label>
+                                <input type="radio" name="radio_color" id="radio_color5" value="red">
+                                <label for="radio_color5" class="radio_color-label radio_color5" ></label>
 
-                                <input type="radio" name="radio_color" id="radio_color6">
+                                <input type="radio" name="radio_color" id="radio_color6" value="white">
                                 <label for="radio_color6" class="radio_color-label radio_color6"></label>
                             </div>
                             <h5>QUONTITY</h5>
-                            <button class="butoon_quontity">1</button> 
+                            <input type="number" name="quontity" class="butoon_quontity">
                         </div>
                         <div class="about_products_size">
                             <h5>SIZE</h5>
                             <div class="products_size_position">
                                  <div class="size_box">
-                                    <input type="checkbox" name="checkbox_size" id="checkbox_14">
+                                    <input type="checkbox" name="checkbox_size" id="checkbox_14" value="14">
                                     <label for="checkbox_14" class="checkbox_size-label">14</label>
 
-                                    <input type="checkbox" name="checkbox_size" id="checkbox_16">
+                                    <input type="checkbox" name="checkbox_size" id="checkbox_16" value="16">
                                     <label for="checkbox_16" class="checkbox_size-label">16</label>
 
-                                    <input type="checkbox" name="checkbox_size" id="checkbox_18">
+                                    <input type="checkbox" name="checkbox_size" id="checkbox_18" value="18">
                                     <label for="checkbox_18" class="checkbox_size-label">18</label>
 
-                                    <input type="checkbox" name="checkbox_size" id="checkbox_20" disabled>
+                                    <input type="checkbox" name="checkbox_size" id="checkbox_20" value="20" disabled>
                                     <label for="checkbox_20" class="checkbox_size-label label_disabled">20</label>
 
-                                    <input type="checkbox" name="checkbox_size" id="checkbox_22">
+                                    <input type="checkbox" name="checkbox_size" id="checkbox_22" value="22">
                                     <label for="checkbox_22" class="checkbox_size-label">22</label>
 
-                                    <input type="checkbox" name="checkbox_size" id="checkbox_24">
+                                    <input type="checkbox" name="checkbox_size" id="checkbox_24" value="24">
                                     <label for="checkbox_24" class="checkbox_size-label">24</label>
                                 </div>
                                 <div class="size_position_link">
@@ -206,7 +206,7 @@
                                 </div> 
                             </div>
                            <div class="add_bag">
-                                <button type="submit">ADD TO BAG ></button>
+                                <button type="submit" id="button_addBag">ADD TO BAG ></button>
                            </div>
                         </div>    
                     </form>
@@ -263,9 +263,9 @@
                         <span>Customer Reviews</span>
                         <button id="write_review">Write a review</button>
                     </div>
-                    <form action="" id="form_textarea" class="box_textarea_form hidden">
-                       <textarea name="" class=""></textarea>
-                       <button class="button_send" id="button_send">Send</button> 
+                    <form id="form_textarea" class="box_textarea_form hidden">
+                       <textarea name="review_text" id="textarea_review" placeholder="text here" value=""></textarea>
+                       <button type="submit" class="button_send" id="button_send">Send</button> 
                     </form>
                 </div>
                 <div class="review_box" id="review_box">
